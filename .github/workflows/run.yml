@@ -1,0 +1,42 @@
+name: Build Awards Digest
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"  # every 6 hours
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run watcher
+        env:
+          MIN_SCORE: "3.5"
+          MARK_SEEN: "0"
+        run: |
+          python awards_watch.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "awards-watch-bot"
+          git config user.email "awards-watch-bot@users.noreply.github.com"
+          git add docs/index.html state_seen.json || true
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Update awards digest"
+          git push
