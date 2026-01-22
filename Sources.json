@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Variety",
+    "type": "Trade",
+    "use_for": "Official awards news, eligibility, campaign reporting",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://variety.com/t/awards/",
+    "rss": null
+  },
+  {
+    "name": "The Hollywood Reporter",
+    "type": "Trade",
+    "use_for": "Official awards news, guild reporting",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.hollywoodreporter.com/c/awards/",
+    "rss": "https://www.hollywoodreporter.com/t/awards/feed/"
+  },
+  {
+    "name": "IndieWire",
+    "type": "Trade",
+    "use_for": "Awards analysis + confirmed news",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.indiewire.com/awards/",
+    "rss": "https://www.indiewire.com/c/awards/feed/"
+  },
+  {
+    "name": "TheWrap",
+    "type": "Trade",
+    "use_for": "Awards announcements, industry context",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.thewrap.com/category/awards/",
+    "rss": null
+  },
+  {
+    "name": "Screen Daily",
+    "type": "Trade",
+    "use_for": "International awards + festival reporting",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.screendaily.com/awards",
+    "rss": "https://www.screendaily.com/45202.rss"
+  },
+  {
+    "name": "Oscars",
+    "type": "Awards Body",
+    "use_for": "Nominations, shortlists, winners",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.oscars.org/news",
+    "rss": null
+  },
+  {
+    "name": "BAFTA",
+    "type": "Awards Body",
+    "use_for": "Longlists, nominations, winners",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.bafta.org/awards/film/",
+    "rss": null
+  },
+  {
+    "name": "SAG",
+    "type": "Guild",
+    "use_for": "Nominations, winners",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.sagawards.org/",
+    "rss": null
+  },
+  {
+    "name": "DGA",
+    "type": "Guild",
+    "use_for": "Nominations, winners",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://www.dga.org/Awards.aspx",
+    "rss": null
+  },
+  {
+    "name": "PGA",
+    "type": "Guild",
+    "use_for": "Nominations, winners",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://producersguild.org/awards/",
+    "rss": null
+  },
+  {
+    "name": "WGA",
+    "type": "Guild",
+    "use_for": "Nominations, winners",
+    "affects_nom": true,
+    "affects_win": true,
+    "url": "https://awards.wga.org/",
+    "rss": null
+  },
+  {
+    "name": "Gold Derby",
+    "type": "Prediction",
+    "use_for": "Expert consensus + trend shifts",
+    "affects_nom": true,
+    "affects_win": false,
+    "url": "https://www.goldderby.com/odds/expert-odds/",
+    "rss": null
+  },
+  {
+    "name": "AwardsWatch",
+    "type": "Prediction",
+    "use_for": "Context + expert opinion",
+    "affects_nom": true,
+    "affects_win": false,
+    "url": "https://awardswatch.com/",
+    "rss": null
+  },
+  {
+    "name": "Awards Daily",
+    "type": "Prediction",
+    "use_for": "Opinion + analysis",
+    "affects_nom": true,
+    "affects_win": false,
+    "url": "https://www.awardsdaily.com/",
+    "rss": null
+  }
+]
